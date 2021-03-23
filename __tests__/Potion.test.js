@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals')
-const Potion = require('../lib/Potion.js')
+const Potion = require('../lib/Potion')
 
 test('creates a health potion object', () => {
     const potion = new Potion()
@@ -8,7 +8,7 @@ test('creates a health potion object', () => {
     expect(potion.name.length).toBeGreaterThan(0)
     expect(potion.value).toEqual(expect.any(Number))
 
-    
+
     // const potion = new Potion('health')
 
     // expect(potion.name).toBe('health')
